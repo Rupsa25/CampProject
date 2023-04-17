@@ -6,11 +6,10 @@ const dbUrl = process.env.DB_URL;
 const express = require('express');
 const path = require('path');
 const ejsMate = require('ejs-mate');
-const { MongoStore } = require('connect-mongo');
-const MongoDBStore = require('connect-mongo')(session);
 const methodOverride = require('method-override');
 const app = express();
 const mongoose = require('mongoose');
+const MongoDBStore = require('connect-mongo')(session);
 // 'mongodb://localhost:27017/yelp-camp'
 mongoose.connect(dbUrl);
 
