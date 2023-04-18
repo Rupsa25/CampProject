@@ -10,6 +10,8 @@ CampR is hosted on Heroku, ensuring a secure and reliable platform for users to 
 The user interface is designed to be intuitive and user-friendly, providing a seamless experience for users to search, view, and interact with campgrounds and fellow campers.
 
 To run this on local machine:
+
+
 npm install
 
 node app.js
