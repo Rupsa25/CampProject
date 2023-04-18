@@ -5,7 +5,7 @@ One of the unique features of CampSearch is the ability for users to create post
 CampR also includes user-specific privileges, allowing registered users to create, edit, and delete their own posts, reviews, and ratings.  
 
 
-The application is built using the popular MEAN stack (MongoDB, Express, Angular, and Node.js) for seamless handling of routing, views, controllers, and database operations. Form validation is implemented to ensure data integrity, and user authentication is included to protect user accounts and information.
+The application is built using the popular MEN stack (MongoDB, Express, Node.js) for seamless handling of routing, views, controllers, and database operations. Form validation is implemented to ensure data integrity, and user authentication is included to protect user accounts and information.
 CampR is hosted on Heroku, ensuring a secure and reliable platform for users to access the application from any device with internet access. 
 The user interface is designed to be intuitive and user-friendly, providing a seamless experience for users to search, view, and interact with campgrounds and fellow campers.
 
