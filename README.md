@@ -18,3 +18,6 @@ node app.js
 
 
 Note: This project uses cloudinary for storing images, include the access credentials to your cloudinary account in the environment variables.
+
+
+link to application: https://obscure-bastion-99885.herokuapp.com/
