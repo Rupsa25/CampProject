@@ -31,33 +31,22 @@ const seedDB = async () => {
             title: `${sample(descriptors)} ${sample(places)}`,
             description: 'Looking started he up perhaps against. How remainder all additions get elsewhere resources. One missed shy wishes supply design answer formed. Prevent on present hastily passage an subject in be. Be happiness arranging so newspaper defective affection ye. Families blessing he in to no daughter.This gibbersish is supposed to make content here with some space being taken up.',
             price: priceVal,
-            geometry: {
-                type: "Point",
-                coordinates: [
-                    cities[random1000].longitude,
-                    cities[random1000].latitude,
-                ]
-            },
             images: [
                 {
-                    url: 'https://res.cloudinary.com/dblpfqf7l/image/upload/v1681597768/CampProject/mxacdu1673kmskpbuqa9.jpg',
-                    filename: 'CampProject/mxacdu1673kmskpbuqa9'
+                    url: 'https://res.cloudinary.com/dblpfqf7l/image/upload/v1681781836/YelpCamp/oqei1rammwrccry8my2y.jpg',
+                    filename: 'CampProject/oqei1rammwrccry8my2y'
                 },
                 {
-                    url: 'https://res.cloudinary.com/dblpfqf7l/image/upload/v1681597768/CampProject/jgbq70wklowtelkppmgh.jpg',
-                    filename: 'CampProject/jgbq70wklowtelkppmgh'
-                },
-                {
-                    url: 'https://res.cloudinary.com/dblpfqf7l/image/upload/v1681597768/CampProject/kod24kmbq1bebfcvo5gq.jpg',
-                    filename: 'CampProject/kod24kmbq1bebfcvo5gq'
+                    url: 'https://res.cloudinary.com/dblpfqf7l/image/upload/v1681785591/CampProject/qi4dxo2cqof2f5z9omb1.jpg',
+                    filename: 'CampProject/qi4dxo2cqof2f5z9omb1'
                 },
             ]
         })
-        // const geoData = await geocoder.forwardGeocode({
-        //     query: newCamps.location,
-        //     limit: 1
-        // }).send()
-        // newCamps.geometry = geoData.body.features[0].geometry;
+        const geoData = await geocoder.forwardGeocode({
+            query: newCamps.location,
+            limit: 1
+        }).send()
+        newCamps.geometry = geoData.body.features[0].geometry;
         await newCamps.save();
     }
 
